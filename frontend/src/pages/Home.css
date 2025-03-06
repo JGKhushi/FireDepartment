@@ -1,0 +1,494 @@
+/* .home {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.hero-section {
+  background-image: url("https://images.unsplash.com/photo-1583960222449-0499d11a3dba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmlyZSUyMGRlcGFydG1lbnR8ZW58MHx8MHx8fDA%3D"); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-heading {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-subtext {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button {
+  background-color: #e53e3e;
+  color: #fff;
+}
+
+.apply-button:hover {
+  background-color: #c53030;
+}
+
+.track-button {
+  background-color: #fff;
+  color: #e53e3e;
+  border: 2px solid #e53e3e;
+}
+
+.track-button:hover {
+  background-color: #e53e3e;
+  color: #fff;
+}
+
+.features-section {
+  padding: 60px 20px;
+  background-color: #f7fafc;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+.process-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-step {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.step-number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #e53e3e;
+  color: #fff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.process-step h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.process-step p {
+  font-size: 16px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 36px;
+  }
+
+  .hero-subtext {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home-button {
+    width: 100%;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .feature-card h3,
+  .process-step h3 {
+    font-size: 20px;
+  }
+
+  .feature-card p,
+  .process-step p {
+    font-size: 14px;
+  }
+}
+ */
+
+ .home {
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url("/src/assets/home.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-heading {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: slideInDown 1s ease-in-out; /* Slide-in animation */
+}
+
+.hero-subtext {
+  font-size: 24px;
+  margin-bottom: 40px;
+  animation: slideInUp 1s ease-in-out; /* Slide-in animation */
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+.home-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.apply-button {
+  background-color: #e53e3e;
+  color: #fff;
+}
+
+.apply-button:hover {
+  background-color: #c53030;
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.track-button {
+  background-color: #fff;
+  color: #e53e3e;
+  border: 2px solid #e53e3e;
+}
+
+.track-button:hover {
+  background-color: #e53e3e;
+  color: #fff;
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Features Section */
+.features-section {
+  padding: 60px 20px;
+  background-color: #f7fafc;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #e53e3e;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Process Section */
+.process-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-step {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.step-number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #e53e3e;
+  color: #fff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite alternate; /* Bounce animation */
+}
+
+.process-step h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.process-step p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 36px;
+  }
+
+  .hero-subtext {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home-button {
+    width: 80%;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .feature-card h3,
+  .process-step h3 {
+    font-size: 20px;
+  }
+
+  .feature-card p,
+  .process-step p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 28px;
+  }
+
+  .hero-subtext {
+    font-size: 16px;
+  }
+
+  .home-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .section-heading {
+    font-size: 24px;
+  }
+
+  .feature-card h3,
+  .process-step h3 {
+    font-size: 18px;
+  }
+
+  .feature-card p,
+  .process-step p {
+    font-size: 12px;
+  }
+}

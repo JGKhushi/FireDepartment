@@ -1,0 +1,122 @@
+.tracknoc-container {
+    width: 90%;
+    max-width: 1000px;
+    /* margin-block: 40px; */
+    margin:60px auto;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .tracknoc-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #d32f2f;
+  }
+  
+  .tracknoc-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .tracknoc-table th, .tracknoc-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .tracknoc-table th {
+    background: #d32f2f;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .tracknoc-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .status-pending {
+    color: #ffa726;
+    font-weight: bold;
+  }
+  
+  .status-review {
+    color: #f57c00;
+    font-weight: bold;
+  }
+  
+  .status-approved {
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  .download-btn, .view-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .download-btn {
+    background: #4caf50;
+    color: white;
+  }
+  
+  .view-btn {
+    background: #0288d1;
+    color: white;
+  }
+  
+  .download-btn:hover, .view-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tracknoc-table {
+      font-size: 14px;
+    }
+  
+    .download-btn, .view-btn {
+      padding: 6px 10px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .tracknoc-container {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .tracknoc-title {
+      font-size: 20px;
+    }
+  
+    .tracknoc-table th, .tracknoc-table td {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+  

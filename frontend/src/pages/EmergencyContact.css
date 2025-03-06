@@ -1,0 +1,105 @@
+.emergency-container {
+    width: 90%;
+    max-width: 800px;
+    margin:40px auto;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .emergency-title {
+    font-size: 26px;
+    color: #d32f2f;
+    margin-bottom: 10px;
+  }
+  
+  .emergency-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .emergency-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .emergency-card {
+    width: 250px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-left: 5px solid #d32f2f;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .emergency-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .emergency-card h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .call-btn, .email-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .call-btn {
+    background: #d32f2f;
+  }
+  
+  .email-btn {
+    background: #0288d1;
+  }
+  
+  .call-btn:hover {
+    background: #b71c1c;
+  }
+  
+  .email-btn:hover {
+    background: #01579b;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .emergency-card {
+      width: 100%;
+    }
+  
+    .call-btn, .email-btn {
+      padding: 8px 14px;
+      font-size: 16px;
+    }
+  }
+  
